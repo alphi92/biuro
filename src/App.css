@@ -2,19 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
 
+@font-face {
+    font-family: 'GOTHIC';
+    src: URL('fonts/GOTHICB.ttf') format('truetype');
+  }
+
 body{
-    background-color: rgb(54, 49, 49) !important;
+    background-color: rgb(46, 44, 36) !important;
 }
 
 a{
-    color:rgb(207, 204, 204) !important;
-    font-family: 'Sansita Swashed', cursive;
+    color:rgb(206, 162, 49) !important;
+    font-family: GOTHIC;
     font-size: 20px;
 }
 
 h3{
-    font-family: 'Krona One', sans-serif;
+    font-family: GOTHIC;
     font-size:30px !important;
+    color:rgb(206, 162, 49);
     
 }
 @media only screen and (max-width: 600px) {
@@ -22,22 +28,23 @@ h3{
         font-size:10px !important;
     }
   }
-h2, h1{
+h2{
     font-family: 'Krona One', sans-serif;
     text-align: center;
-    color:rgb(207, 204, 204);
+    color:rgb(206, 162, 49);
 }
 
 
-.navbar-brand img {
-    width:250px;
-    height:80px;
+.navbar-brand img{
+    width:400px;
+    height:150px;
+    background-color: transparent;
 }
 
 .cytat{
     font-style: italic;
     font-size: 25px;
-    color: rgb(207, 204, 204);
+    color: rgb(206, 162, 49);
     margin-top:75px;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -45,7 +52,7 @@ h2, h1{
 
 .row p{
     margin-top:80px;
-    color: rgb(207, 204, 204);
+    color:rgb(206, 162, 49);
     font-family: 'Krona One', sans-serif;
 }
 
@@ -57,48 +64,13 @@ h2, h1{
 }
 
 .oferta li{
-    color:rgb(207, 204, 204);
+    color:rgb(206, 162, 49);
     font-family: 'Open Sans Condensed', sans-serif;
     font-size:25px;
     padding: 0.2em;
-    border-bottom: 1px dashed rgb(134, 124, 124);
     list-style-type: none;
     list-style-image: url("./lista3.svg");
     margin-bottom:5px;
-}
-
-.oferta li:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    z-index: 0;
-}
-
-.oferta .tab1{
-    border: black;
-    border-style: double;
-    
-}
-
-.oferta .tab2{
-    border: black;
-    border-style: double;
-    
-}
-.oferta-img{
-    position: relative;
-    margin-bottom: 25px;
-}
-.oferta-img-caption{
-position: absolute;
-  width: 70px;
-  height: 175px;
-  top: 50%;
-  right: 50%;
-  color: #ffffff;
-  text-align:center;
-  font-weight:bold;
-  font-size:50px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -116,12 +88,49 @@ iframe{
     border: transparent;
 }
 
-.card{
-    margin-top:120px;
+.karta_kontakt .card{
+    margin-top: 120px;
     text-align: center;
     font-size: 13px;
-    background-color: rgb(105, 43, 43) !important;
-    color: rgb(207, 204, 204);
-    font-family: 'Krona One', sans-serif;
+    background-color: rgb(46, 44, 30) !important;
+    color:rgb(206, 162, 49);
+    font-family: GOTHIC;
+    border-style: dashed;
+    border-color: rgb(187, 199, 26);
 
 }
+
+.oferta li{
+    font-size:13px;
+    font-family: GOTHIC;
+}
+
+.oferta .card-header{
+    font-size: 18px;
+}
+
+
+.tytul_oferta h2{
+    margin-bottom: 30px;
+}
+.listaZalet .col{
+    border-style: double;
+    border-color: rgb(187, 199, 26);
+    margin-left: 20px;
+    margin-top: 25px;
+    background-color:rgb(46, 44, 30);
+    margin-bottom: 50px;
+}
+
+.lista_ksiegaR li, .lista_ksiegaP  li{
+    list-style-type: none;
+    list-style-image: url("./lista3.svg");
+    font-family: GOTHIC;
+    font-size:14px !important;
+    color:rgb(206, 162, 49);
+    margin-bottom: 15px;
+    border-color: rgb(187, 199, 26);
+}
+
+
+

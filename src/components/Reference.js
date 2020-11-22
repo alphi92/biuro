@@ -8,7 +8,7 @@ class Reference extends Component{
         return(
             <Container className="mt-5">
                 <Row>
-                    <p>chuj w dupe policji</p>
+                <p>STRONA W TRAKCIE KONSTRUKCJI</p>
                 </Row>
             </Container>   
         );

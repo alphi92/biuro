@@ -10,24 +10,29 @@ import Contact from "./components/Contact";
 import {Container} from 'react-bootstrap';
 import {Nav} from 'react-bootstrap';
 import {Navbar} from 'react-bootstrap';
-import logo2 from "./logo2.jpg";
+import logoZL from "./logoZL.png";
 
 class App extends Component{
 
   render(){
     return (
-      <Container fluid>
+      <Container>
           <BrowserRouter>
               <header>
-                <Nav className="justify-content-end" activeKey="/home">
-                  <Navbar.Brand ><img src={logo2} alt="logotyp"/> </Navbar.Brand>
-                  <Nav.Link as={Link} to="/"></Nav.Link>
-                  <Nav.Link as={Link} to="/home">Strona główna</Nav.Link>
-                  <Nav.Link as={Link} to="/about">O nas</Nav.Link>
-                  <Nav.Link as={Link} to="/offer">Oferta</Nav.Link>
-                  <Nav.Link as={Link} to="/reference">Referencje</Nav.Link>
-                  <Nav.Link as={Link} to="/contact">Kontakt</Nav.Link>
-                </Nav>
+                <Navbar collapseOnSelect expand="lg" bg="transparent">
+                  <Navbar.Brand><img src={logoZL} alt="logotyp"/></Navbar.Brand>
+                  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                  <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="navbar-nav ml-auto">
+                      <Nav.Link as={Link} to="/"></Nav.Link>
+                      <Nav.Link as={Link} to="/home">Strona główna</Nav.Link>
+                      <Nav.Link as={Link} to="/about">O nas</Nav.Link>
+                      <Nav.Link as={Link} to="/offer">Oferta</Nav.Link>
+                      <Nav.Link as={Link} to="/reference">Referencje</Nav.Link>
+                      <Nav.Link as={Link} to="/contact">Kontakt</Nav.Link>
+                    </Nav>
+                  </Navbar.Collapse>
+                </Navbar>
               </header>
               <Switch>
                   <Route exact path="/" component={Home} />
@@ -38,6 +43,7 @@ class App extends Component{
                   <Route path="/contact" component={Contact} />
               </Switch>
             </BrowserRouter>
+            
         </Container>
     );
   }

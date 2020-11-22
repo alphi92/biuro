@@ -9,7 +9,7 @@ class About extends Component{
         return(
             <Container className="mt-5">
                 <Row>
-                    <p>Nasze biuro rachunkowe powstało w 2018 roku.</p>
+                    <p>STRONA W TRAKCIE KONSTRUKCJI</p>
                 </Row>
             </Container>   
         );

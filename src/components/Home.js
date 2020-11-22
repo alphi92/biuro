@@ -48,19 +48,21 @@ class Home extends Component{
               </Carousel.Item>
               </Carousel>
               <div className="cytat"><p>„Urząd skarbowy nic nie poradzi, gdy Andrzej Bardadin księgi prowadzi."</p></div>
-              <Row>
-                <Col><p>Pełna księgowość</p></Col>
-                <Col><p>Prowadzenie księgi przychodów i rozchodów</p></Col>
-                <Col><p>Obsługa kadrowo-płacowa</p></Col>
-                <Col><p>Rozliczenia: <ul>
-                  <li>PIT</li>
-                  <li>CIT</li>
-                  <li>VAT</li>
-                  <li>ZUS</li>
-                  <li>PFRON</li>
-                  </ul></p></Col>
-                <Col><p>Rozliczanie rolników</p></Col>
-              </Row>
+              <div className="listaZalet">
+                <Row>
+                  <Col><p>Pełna księgowość</p></Col>
+                  <Col><p>Prowadzenie księgi przychodów i rozchodów</p></Col>
+                  <Col><p>Obsługa kadrowo-płacowa</p></Col>
+                  <Col><p>Rozliczenia: <ul>
+                    <li>PIT</li>
+                    <li>CIT</li>
+                    <li>VAT</li>
+                    <li>ZUS</li>
+                    <li>PFRON</li>
+                    </ul></p></Col>
+                  <Col><p>Rozliczanie rolników</p></Col>
+                </Row>
+              </div>  
             </Container>
          );
       }

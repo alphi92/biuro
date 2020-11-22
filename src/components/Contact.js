@@ -27,21 +27,22 @@ class Contact extends Component{
            
             <Row>
                 <Col sm={4}>
-                    <Card style={{ width: '19rem' }}>
-                        <Card.Body>
-                            <Card.Title>Kontakt</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">Zapraszamy do kontaktu</Card.Subtitle>
-                            <Card.Text>
-                                Biuro rachunkowe <br/>
-                                Andrzej Bardadin<br/>
-                                Kozubszczyzna 79 <br/>
-                                21-030 Motycz<br/>
+                    <div className="karta_kontakt">
+                        <Card style={{ width: '19rem' }}>
+                            <Card.Body>
+                                <Card.Title>Kontakt</Card.Title>
+                                <Card.Text>
+                                    Biuro rachunkowe <br/>
+                                    Andrzej Bardadin<br/>
+                                    Kozubszczyzna 79 <br/>
+                                    21-030 Motycz<br/>
 
-                                Tel: 691 035 394<br/>
-                                andrzejbardadin@gmail.com<br/>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+                                    Tel: 691 035 394<br/>
+                                    andrzejbardadin@gmail.com<br/>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
                 </Col>
                 <Col sm={8}><form onSubmit={this.sendEmail}>
                     <div className="row pt-5 mx-auto">
