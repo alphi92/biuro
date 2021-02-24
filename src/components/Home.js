@@ -12,7 +12,7 @@ import {Col} from 'react-bootstrap';
 class Home extends Component{
     render(){
         return(
-          <Container className="mt-5">
+          <Container fluid>
             <Carousel indicators={false} controls={false} interval={2000}>
               <Carousel.Item>
                 <img
